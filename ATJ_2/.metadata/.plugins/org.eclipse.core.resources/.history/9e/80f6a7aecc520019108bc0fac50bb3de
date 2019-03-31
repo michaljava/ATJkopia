@@ -1,0 +1,25 @@
+package atj;
+
+import javax.jms.Message;
+import javax.jms.MessageListener;
+import javax.jms.TextMessage;
+
+import com.sun.messaging.jms.JMSException;
+
+public class AsynchSubscriber implements MessageListener {
+
+	@Override
+	public void onMessage(Message message) {
+		if (message instanceof TextMessage)
+			try {
+				try {
+					System.out.printf("Odebrano wiadomość:'%s'	%n", ((TextMessage) message).getText());
+				} catch (javax.jms.JMSException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (JMSException e) {
+				e.printStackTrace();
+			}
+	}
+}

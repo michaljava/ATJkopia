@@ -1,0 +1,4 @@
+#GlassFish 3
+#Sun Mar 31 11:46:52 CEST 2019
+org.eclipse.jst.jee.server\:Kantor=/home/users/mchmura/Pobrane/glassfish4/glassfish/domains/domain1/eclipseApps/Kantor
+org.eclipse.jst.jee.server\:Curs=/home/users/mchmura/Pobrane/glassfish4/glassfish/domains/domain1/eclipseApps/Curs

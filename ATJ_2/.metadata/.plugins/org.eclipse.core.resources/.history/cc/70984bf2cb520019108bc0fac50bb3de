@@ -1,0 +1,7 @@
+package atj;
+
+import javax.jms.MessageListener;
+
+public class AsynchSubscriber implements MessageListener {
+
+}
